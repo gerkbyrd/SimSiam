@@ -3,7 +3,7 @@
 In this project, we present our re-implementation of the [SimSiam](https://arxiv.org/abs/2011.10566) paper in PyTorch.
 
 
-You can find the report at [Reproducible CLUEs: A Basic Framework-Invariance Test](addlinkhere).
+You can find the report at [SimSiam REPORT](addlinkhere).
 
 # Abstract
 
