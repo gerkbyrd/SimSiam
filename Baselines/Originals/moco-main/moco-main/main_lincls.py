@@ -60,7 +60,7 @@ parser.add_argument('-p', '--print-freq', default=10, type=int,
                     metavar='N', help='print frequency (default: 10)')
 parser.add_argument('--resume', default='', type=str, metavar='PATH',
                     help='path to latest checkpoint (default: none)')
-parser.add_argument('-e', '--evaluate', dest='evaluate', default=True,#action='store_true',
+parser.add_argument('-e', '--evaluate', dest='evaluate', default=False,#action='store_true',
                     help='evaluate model on validation set')
 parser.add_argument('--world-size', default=1, type=int,
                     help='number of nodes for distributed training')
