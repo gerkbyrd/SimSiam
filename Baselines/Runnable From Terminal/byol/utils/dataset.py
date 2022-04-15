@@ -46,14 +46,10 @@ class Split(enum.Enum):
   @property
   def num_examples(self):
     return {
-#        Split.TRAIN_AND_VALID: 60000,
-#        Split.TRAIN: 50000,
-#        Split.VALID: 0,
-#        Split.TEST: 10000
-        Split.TRAIN_AND_VALID: 1281167,
-        Split.TRAIN: 1271167,
-        Split.VALID: 10000,
-        Split.TEST: 50000
+        Split.TRAIN_AND_VALID: 9469,# + 3925,#60000,
+        Split.TRAIN: 9469,#50000,
+        Split.VALID: 0,
+        Split.TEST: 3925,#10000
     }[self]
 
 
@@ -87,8 +83,9 @@ def load(split: Split,
   tfds_split = tfds.core.ReadInstruction(
       _to_tfds_split(split), from_=start, to=end, unit='abs')
   ds = tfds.load(
-      'imagenet2012:5.*.*',
+      #'imagenet2012:5.*.*',
       #'cifar100',
+      'imagenette',
       split=tfds_split,
       decoders={'image': tfds.decode.SkipDecoding()})
 
