@@ -11,7 +11,6 @@ This project aims to reproduce the popular SimSiam method for unsupervised image
 # Structure
 All our experiments are presented as Jupyter notebooks for simplicity, and our code is organized as follows:
 
-Baselines
 SimSiamMainCode.ipynb contains our main implementation of SimSiam. It is written with the empirical studies of the original paper in mind, thus users can modify flags as indicated in the corresponding cell to perform pre-training under the different configurations used for this part of the original paper.
 
 SimSiamExperimentsCode.ipynb contains the code to run our proposed experiments on SimSiam's pre-training optimization scheme, just as in the case of the reproduction of the original paper's empirical studies, the experiment is defined by the user by making use of the flags in the adequate cell. Different combinations of the configurations can be used to go beyond our implementation.
